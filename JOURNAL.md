@@ -3,7 +3,7 @@ title: "LED CUBE"
 github: "https://github.com/rosan-24/led-cube"
 description: "4x4x4 led cube powered by esp32"
 created_at: "2026-11-06"
-total_time: "5h 18m"
+total_time: "9h 24m"
 ---
 ---
 title: "LED CUBE"
@@ -78,3 +78,28 @@ total_time: "4h"
 ![](https://fabricate.hackclub-assets.com/a03c7166becfe0d81be6b02ccaa93aac5663e1a458ef3f3c40b5cb7a36521f5e/image-png/Screenshot%202026-11-11%20192723.png)
 
 **Total time spent: 1h 18m**
+
+# November 16, 2026: Casing for component
+<!-- fabricate:entry 3203 -->
+
+So basically, what's the thing is I have created a folder for the led components it's a box which was designed in onshape. 
+through the process I have learned to use kicad and cad to design something related.
+the next process is to create the code to run the program.
+
+![](https://fabricate.hackclub-assets.com/729ed755c7e61043d40474f97d6e6d02b87bb57367a4ce4e9bfbfa42e7217722/image-png/Screenshot%202026-11-16%20195619.png)
+![](https://fabricate.hackclub-assets.com/023b41e10b68bb8a86429e818bc19b342bb8134c28231398f5b61a6ec63b326d/image-png/Screenshot%202026-11-16%20200524.png)
+
+**Total time spent: 2h 18m**
+
+# November 18, 2026: Routed the pcb and resolved some design reviews.
+<!-- fabricate:entry 3377 -->
+
+In this devlog, i have finally resolved all the design errors on both schematic and pcb designs.
+
+Now, everything is looking great. Still, they are a lot to do.
+Still, i have to work on CAD design and then refining the pcb, generating gerber files, etc...
+
+![](https://fabricate.hackclub-assets.com/fa87073271d14f5708598186583f40af4d110946ab5b8346cd6a5df0f7744fad/image-png/image.png)
+![](https://fabricate.hackclub-assets.com/5bb48e02b5d7b379831a49075908c38e3ecadad26042a015c13800f8d01efeaf/image-png/image.png)
+
+**Total time spent: 1h 48m**
