@@ -1,33 +1,14 @@
-/*
-  4x4x4 LED Cube "DIY Active" - direct wiring on an ESP32 DEVKITV1 (30-pin)
-  Wiring: see 4x4x4led_direct_wiring.png  (no resistors, no driver chips)
-
-  Layers   L0..L3 : GPIO 13, 14, 26, 27   HIGH = layer on (pin supplies current)
-  Columns  C0..C15: GPIO 4,16,17,18,19,21,22,23,25,32,33,0,2,5,12,15
-                    LOW = column on (pin sinks current)
-
-  Column index c = 4*x + y (x, y = 0..3), same numbering as the original sketch.
-
-  There is no resistor in the LED circuit, so the GPIO drive strength limits
-  the current. Each pin is set to about 20 mA, so the code keeps the cube safe:
-    - only one layer is on at a time (the layers are scanned in turn)
-    - at most MAX_PER_LAYER LEDs are lit in any layer at the same time
-  Before running the full cube, check the current of one layer with a
-  multimeter and change DRIVE if needed.
-
-  Note: GPIO 2 also drives the onboard LED, which glows faintly while C12 is off.
-*/
-
 #include "driver/gpio.h"
 
 // ---------- wiring ----------
-const int LAYER_PIN[4] = {27, 26, 14, 13};
-const int COL_PIN[16]  = {4, 16, 17, 18, 19, 21, 22, 23, 25, 32, 33, 0, 2, 5, 12, 15};
+// ---------- wiring (matches the PCB netlist, with the L11 and L12 fix) ----------
+const int LAYER_PIN[4] = {27, 14, 12, 13};
+const int COL_PIN[16]  = {15, 2, 4, 16, 17, 5, 18, 19, 21, 22, 23, 1, 32, 33, 25, 26};
 
 // ---------- limits and timing ----------
-const int MAX_PER_LAYER = 4;                        // LEDs allowed on per layer at once
+const int MAX_PER_LAYER = 6;                        // LEDs allowed on per layer at once
 const unsigned int ON_US = 1500;                    // time each layer stays on per scan (us)
-const gpio_drive_cap_t DRIVE = GPIO_DRIVE_CAP_2;    // about 20 mA per pin
+const gpio_drive_cap_t DRIVE = GPIO_DRIVE_CAP_1;    // about 10 mA per pin (layer resistors limit to about 6 mA)
 const unsigned long SPEED = 250;                    // base timing (was "time")
 
 // ---------- LED state ----------
@@ -123,7 +104,7 @@ void setup()
     digitalWrite(COL_PIN[c], HIGH);          // HIGH = column off
     gpio_set_drive_capability((gpio_num_t)COL_PIN[c], DRIVE);
   }
-  randomSeed(analogRead(34));                // GPIO 34 is left unconnected
+  randomSeed(analogRead(36));                // GPIO 36 (VP) is unconnected on the PCB
 }
 
 // ---------- animations (same order as the original loop) ----------
