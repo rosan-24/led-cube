@@ -83,7 +83,7 @@ Layers LI1 pins 1 to 4, each through a 220 ohm resistor
 - **Step 1:** Check you have all the parts from the BOM.
 - **Step 2:** Then order the PCB from `Gerber.zip`.
 - **Step 3:** Print the enclosure from `Enclosure.stl`.
-- https://cad.onshape.com/documents/0a3f761ee42ff1405eb7b06c/w/b8200c23618620a7a2b510f9/e/1fe51c6ae75d2e9aa39f5645
+https://github.com/rosan-24/led-cube/blob/main/CAD/Assembly%201.step
 - **Step 4:** Solder the parts, connect the battery and the cube wiring, and check every column and layer by hand.
 - **Step 5:** Flash the firmware once it's added to the repo.
 
