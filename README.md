@@ -62,6 +62,9 @@ The full build log is in [JOURNAL.md](JOURNAL.md).
 - Track widths: 0.3 mm for LED layer and column nets, 0.5 mm for GND and VIN, 1.0 mm for the battery side.
 - All 29 nets are fully routed.
 - The gerbers in `Gerber.zip` match the current PCB.
+<img width="589" height="442" alt="Screenshot 2026-11-18 131807" src="https://github.com/user-attachments/assets/0f805d19-6ad1-43ba-84dd-3375ee7c4030" />
+<img width="960" height="540" alt="Screenshot 2026-11-22 130043" src="https://github.com/user-attachments/assets/7ee4ebfd-91f2-4c37-b099-ce4dab9657df" />
+
 
 ---
 
