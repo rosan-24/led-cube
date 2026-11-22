@@ -49,6 +49,13 @@ The full build log is in [JOURNAL.md](JOURNAL.md).
 **Schematic:** the ESP32 DevKit, TP4056 charger, TPS61023 boost, power switch, 4 layer resistors, the layer connector LI1 and 16 column pads.
 
 **Power path:** LiPo cell to the TP4056 battery pads, then TP4056 OUT+ through SW1 to the boost input. The boost output (5 V) feeds the ESP32 VIN pin. All grounds are shared.
+<img width="960" height="540" alt="Screenshot 2026-11-11 000625" src="https://github.com/user-attachments/assets/45aa6dda-fa27-40c7-9d4c-cf379c01ad0c" />
+<img width="960" height="540" alt="Screenshot 2026-11-13 204906" src="https://github.com/user-attachments/assets/bc470c8a-58b0-4659-b244-fa24ed9f04d8" />
+<img width="960" height="540" alt="Screenshot 2026-11-13 204850" src="https://github.com/user-attachments/assets/a91d5eeb-299b-42a8-8c42-cf77a6c3f614" />
+<img width="960" height="540" alt="Screenshot 2026-11-21 221956" src="https://github.com/user-attachments/assets/7f4eabc7-7f31-479c-8875-4afb1daccfaa" />
+
+
+
 
 **PCB:**
 - Two copper layers (F.Cu and B.Cu), 131 tracks,0 vias,0 copper pours.
