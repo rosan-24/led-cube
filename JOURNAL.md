@@ -3,7 +3,7 @@ title: "LED CUBE"
 github: "https://github.com/rosan-24/led-cube"
 description: "4x4x4 led cube powered by esp32"
 created_at: "2026-11-06"
-total_time: "9h 24m"
+total_time: "10h 24m"
 ---
 ---
 title: "LED CUBE"
@@ -103,3 +103,15 @@ Still, i have to work on CAD design and then refining the pcb, generating gerber
 ![](https://fabricate.hackclub-assets.com/5bb48e02b5d7b379831a49075908c38e3ecadad26042a015c13800f8d01efeaf/image-png/image.png)
 
 **Total time spent: 1h 48m**
+
+# November 22, 2026: Final adjustment
+<!-- fabricate:entry 3687 -->
+
+So basically, I worked on organizing the LED layers and testing the connections to ensure everything lights up correctly. also created a hole to connect the esp32 to modify. and also added some text to the board, now it is ready for review...!!
+
+![](https://fabricate.hackclub-assets.com/b3250c0f99b73d192d620e7c956c0888eaa942d740d2f6d274d12d965f08b94e/image-png/Screenshot%202026-11-22%20130144.png)
+![](https://fabricate.hackclub-assets.com/eeeef4c406c6184206d142bd2e2f69982924c59d749288d740a90420bcab4f87/image-png/Screenshot%202026-11-22%20130043.png)
+![](https://fabricate.hackclub-assets.com/75104cc7b37fb380ba8689f06c8119bcd6005d4483af301a8231b036e7170bf7/image-png/Screenshot%202026-11-21%20221956.png)
+![](https://fabricate.hackclub-assets.com/84264bb7e91d9d86c7d9df82b23946c3261579da3cc5dab0afbe7a44eb307532/image-jpeg/ad8a799b46.jpg)
+
+**Total time spent: 1h**
